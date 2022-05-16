@@ -14,14 +14,29 @@ public class Dancer extends Person{
     }
 
     public void dencing(){
-        System.out.print(getName()+"Dencing.");
+        System.out.print(getName()+" Dancer dencing.");
+    }
+
+    @Override
+    public void learn(){
+        System.out.print("Learning a new dance.");
+    }
+
+    @Override
+    public void walk(){
+        System.out.print("Walks in the city. ");
+    }
+
+    @Override
+    public void eat(){
+        System.out.print("Eats fruit. ");
     }
 
     @Override
     public String toString(){
-        super.learn();
-        super.walk();
-        super.eat();
+        learn();
+        walk();
+        eat();
         dencing();
         return "\nName: "+getName()+" Designation: "+getDesignation()+" Grop name: "+getGroupName();
     }

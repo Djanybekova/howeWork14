@@ -18,15 +18,15 @@ public class Person {
     }
 
     public void learn(){
-        System.out.print("learning, ");
+        System.out.print("learning  ");
     }
 
     public void walk(){
-        System.out.print("Walkinging, ");
+        System.out.print("Walks ");
     }
 
     public void eat(){
-        System.out.print("Eating, ");
+        System.out.print("Eats  ");
     }
 
 

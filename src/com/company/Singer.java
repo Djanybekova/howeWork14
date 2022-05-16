@@ -9,7 +9,7 @@ public class Singer extends Person{
     }
 
     public void Singing(){
-        System.out.print(getName()+"Singing ");
+        System.out.print(getName()+"Singer singing ");
     }
     public void PlayGitar(){
         System.out.print("and Play Gitar. ");
@@ -17,6 +17,21 @@ public class Singer extends Person{
 
     public String getBandName() {
         return bandName;
+    }
+
+    @Override
+    public void learn(){
+        System.out.print("Learning a new song.");
+    }
+
+    @Override
+    public void walk(){
+        System.out.print("Walks in the city and park. ");
+    }
+
+    @Override
+    public void eat(){
+        System.out.print("Eats fruit and  vegetables. ");
     }
 
     @Override

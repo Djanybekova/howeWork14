@@ -3,6 +3,7 @@ package com.company;
 public class Programmer extends Person{
     private String CompanyName;
 
+
     public Programmer(String name, String designation, String companyName) {
         super(name, designation);
         CompanyName = companyName;
@@ -12,14 +13,29 @@ public class Programmer extends Person{
         return CompanyName;
     }
 
+    @Override
+    public void learn(){
+        System.out.print("Learning coding. ");
+    }
+
+    @Override
+    public void walk(){
+        System.out.print("Walks in the park. ");
+    }
+
+    @Override
+    public void eat(){
+        System.out.print("Eats vegetables. ");
+    }
+
     public void coding(){
-        System.out.print(getName()+"Coding.");
+        System.out.print("Programmer coding.");
     }
 
     public String toString(){
-        super.learn();
-        super.walk();
-        super.eat();
+        learn();
+        walk();
+        eat();
         coding();
         return "\nName: "+getName()+" Designation: "+getDesignation()+" Compani name: "+getCompanyName();
     }
